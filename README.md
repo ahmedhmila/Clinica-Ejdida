@@ -14,3 +14,4 @@ The `Main` class also contains various methods to handle each menu option. For e
 The system uses other classes, such as `Building`, `Manager`, `Patient`, `Maladie`, and `Chamber`, to represent entities and store their information. It also interacts with the database through the service classes to perform CRUD (Create, Read, Update, Delete) operations.
 
 Overall, the Clinic Management System provides a user-friendly interface for managing patients, buildings, chambers, managers, and diseases in a clinic setting. It offers essential features to streamline the clinic's operations and improve patient care.
+There is the database file java.sql that contains all the tables needed also ,included, the presentation as clinica ejdida.mp4 and also the mysqlconnector for the database connections
