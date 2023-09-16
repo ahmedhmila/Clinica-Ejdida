@@ -1,17 +1,83 @@
-# Clinica-Ejdida
-The project is a Clinic Management System called "CLINICA EJDIDA". It provides functionality for managing patients, buildings, chambers, managers, and diseases in a clinic.
+# Clinica-Ejdida - Clinic Management System
 
-The system is implemented using Java programming language. It consists of several classes, including `Main`, which serves as the entry point for the application.
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-The `Main` class contains the main method, which is responsible for initializing the system and handling user interactions. It uses various service classes, such as `BuildingImpl`, `ManagerImpl`, `PatientImpl`, `MaladieImpl`, and `ChamberImpl`, to perform operations related to buildings, managers, patients, diseases, and chambers.
+## Introduction
 
-Upon starting the application, the user is greeted with a welcome message. The system then checks if the user has an existing account. If the user has an account, they are prompted to log in; otherwise, they can create a new account.
+The Clinica-Ejdida is a Java-based Clinic Management System designed to efficiently manage patients, buildings, chambers, managers, and diseases in a clinical setting. This README provides an overview of the project's structure, functionality, and setup instructions.
 
-Once logged in as a manager, the user is presented with a menu of options to choose from. These options include adding a patient, evacuating a patient, viewing and modifying patient information, viewing all patients' information, checking empty rooms, viewing maladies list, adding a maladie, and logging out.
+## Features
 
-The `Main` class also contains various methods to handle each menu option. For example, the `addPatient()` method allows the manager to add a new patient to the system by entering their details, selecting a building and chamber, and assigning a maladie to the patient. The `modifyPatientInformation()` method allows the manager to modify an existing patient's information, such as their name, gender, chamber, and maladie.
+- **User Authentication**: Users can log in as managers or create new accounts.
 
-The system uses other classes, such as `Building`, `Manager`, `Patient`, `Maladie`, and `Chamber`, to represent entities and store their information. It also interacts with the database through the service classes to perform CRUD (Create, Read, Update, Delete) operations.
+- **Patient Management**: Managers can add new patients, modify patient information, view all patients' details, and evacuate patients.
 
-Overall, the Clinic Management System provides a user-friendly interface for managing patients, buildings, chambers, managers, and diseases in a clinic setting. It offers essential features to streamline the clinic's operations and improve patient care.
-There is the database file java.sql that contains all the tables needed also ,included, the presentation as clinica ejdida.mp4 and also the mysqlconnector for the database connections
+- **Building and Chamber Management**: Managers can check empty rooms and assign patients to specific chambers within buildings.
+
+- **Disease Management**: Managers can view a list of diseases, add new diseases, and assign diseases to patients.
+
+- **Database Integration**: The system uses a MySQL database to store and retrieve data, ensuring data persistence.
+
+## Project Structure
+
+The project is organized as follows:
+
+- `Main`: Entry point for the application, handling user interactions and menu options.
+- `BuildingImpl`, `ManagerImpl`, `PatientImpl`, `MaladieImpl`, `ChamberImpl`: Service classes for operations related to buildings, managers, patients, diseases, and chambers.
+- `Building`, `Manager`, `Patient`, `Maladie`, `Chamber`: Classes representing entities and storing their information.
+- `java.sql`: Database file containing tables and data structure.
+- MySQL Connector: Included for establishing database connections.
+
+## Getting Started
+
+### Prerequisites
+
+- Web browser (Google Chrome, Mozilla Firefox, etc.)
+- MySQL database
+
+### Steps
+
+1. **Clone the Repository**: Clone this repository to your local machine using the following command:
+
+   ```shell
+   git clone https://github.com/ahmedhmila/Clinica-Ejdida.git
+   ```
+
+2. **Database Setup**:
+   - Ensure you have MySQL installed.
+   - Create a new database and import the `java.sql` file to set up the necessary tables and data.
+   - Update the database connection details (username and password) in the appropriate service classes (`BuildingImpl`, `ManagerImpl`, `PatientImpl`, `MaladieImpl`, `ChamberImpl`) to match your MySQL configuration.
+   
+   3. **MySQL Connector**: Ensure you have the MySQL Connector for Java in your project's classpath to establish database connections.
+
+4. **Run the Application**:
+   - Navigate to the project directory.
+   - Compile and run the `Main` class to start the application.
+
+   ```shell
+   javac Main.java
+   java Main
+   ```
+
+## Contributing
+
+Feel free to contribute to this project by submitting bug reports, feature requests, or pull requests on GitHub.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+- Project Creator: Ahmed Hmila 
+- Project Link: [https://github.com/ahmedhmila/Clinica-Ejdida](https://github.com/ahmedhmila/Clinica-Ejdida)
+- 📧 **Email:** [ahmedhmiladev@gmail.com](mailto:ahmedhmiladev@gmail.com)
+- 💼 **LinkedIn:** [Let's connect on LinkedIn!](https://www.linkedin.com/in/ahmed-hmila/)
+---
